@@ -1,0 +1,9 @@
+<% provide(:title, "Confirm") %>
+<h1>シフト一覧</h1>
+<% @posts.each do |post| %>
+    <h2>氏名</h2>
+    <p>日付</p>
+    <span><%= post.date %></span>
+    <p>時間</p>
+    <span><%= post.time %></span>
+<% end %>
